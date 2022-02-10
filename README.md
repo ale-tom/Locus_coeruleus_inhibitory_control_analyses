@@ -1,5 +1,3 @@
-README
-================
 
 ## Prefrontal cortical connectivity mediates locus coeruleus noradrenergic regulation of inhibitory control in older adults
 
