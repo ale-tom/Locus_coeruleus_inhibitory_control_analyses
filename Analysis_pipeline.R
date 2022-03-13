@@ -20,14 +20,13 @@ GM   <-as.data.frame(read.csv(here::here('Data','CC_VBM_ROI_8mmRad.csv')))# grey
 
 
 #load cognitive scores
-tests2 <- as.data.frame(read.delim2(here::here('Data','CC_cognitive_life_scores.txt')))
-
+tests2 <- as.data.frame(read.csv(here::here('Data','CC_cognitive_scores.csv')))
 
 # Data and feature engineering ----------------------------------------------------------------------------------------------------------
 
-#extract scores
-cattel<- tests2 %>% rename('id'= 'SubCCIDc') %>% rename('scoreTot' = 'Cattell_TotalScore') %>% rename('STW'='STW_total') %>%
-          select(c('id','scoreTot','STW','HADS_anxiety','HADS_depression','memory','attention_orientation','visuospatial','acer'))
+#tidy up scores
+cattel<- tests2 %>% rename('id'= 'SubCCIDc') %>% rename('scoreTot' = 'Cattell_TotalScore') %>% rename('STW'='STW_total') 
+
 
 #strip prefixes and uniform column names  
 FC$id %<>% gsub("[A-z]","",.)
