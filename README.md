@@ -16,3 +16,5 @@ at this [link](https://osf.io/zgj9n/). For the sake of reproducibility,
 a renv.lock file including metadata and dependencies has been included
 (have a look at [renv](https://rstudio.github.io/renv/index.html) for
 further details).
+
+![Summary](https://user-images.githubusercontent.com/30290119/160937499-c17fad32-c2a5-4765-a68c-e709ecff538c.jpg)
