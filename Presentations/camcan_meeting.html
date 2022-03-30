@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>The role of the locus coeruleus noradrenergic system in inhibitory control</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"b563fc6078614721b9efece5c719d64a","expires":14}</script>
+    <script src="libs/himalaya/himalaya.js"></script>
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <link href="libs/editable/editable.css" rel="stylesheet" />
+    <script src="libs/editable/editable.js"></script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30}) })</script>
+  </head>
+  <body>
+    <textarea id="source">
+
+class:  center, middle
+
+
+
+
+
+
+&lt;img style="position: absolute; top: 0; right: 0; border: 0; margin: 10px 50px" src="pictures/logo_uni.jpg" width = "250px" &gt;
+&lt;img style="position: absolute; top: 0; left: 0; border: 0; margin: 20px 50px" src="pictures/logoCBU.jpg" width = "220px" &gt;
+
+
+
+## The role of the locus coeruleus noradrenergic system in inhibitory control
+
+&lt;/br&gt;
+A. Tomassini, F.H. Hezemans, R. Ye, K.A. Tsvetanov, N. Wolpe, J.B. Rowe
+
+&lt;img src="pictures/egg.gif" style = "width: 20%" /&gt;
+
+&lt;/br&gt;
+
+
+.large[Alessandro Tomassini | Lab Meeting | 22 April 2021]
+
+
+
+
+---
+# Introduction
+
+&lt;/br&gt;
+* The inability to inhibit inappropriate responses features in many neurological and psychiatric disorders (Passamonti et al., 2018).  
+
+* Noradrenergic activity facilitates inhibitory responses (Eagle and Baunez, 2010; Chamberlain, 2006).
+
+* Noradrenergic activity modulates connectivity within 'stopping network' (rIFG,preSMA; Ye et al., 2015;Rae et al., 2016).
+
+* Cerebral noradrenergic innervation arises from the locus coeruleus, in the brainstem.
+
+* Restorative effects of noradrenergic agonists on response inhibition scales with integrity of caudal locus coeruleus in Parkinson's (O'Callaghan et al., 2020)
+
+
+&lt;/br&gt;
+--
+&lt;/br&gt;
+**Scarce *in vivo* evidence for association between locus coeruleus integrity and response inhibition in health.**
+--
+---
+# Hypotheses
+
+Hypotheses and analysis approaches pre-registered with the **Open Science Framework** (OSF)
+&lt;/br&gt;
+&lt;/br&gt;
+
+&lt;/br&gt;
+&lt;/br&gt;
+
+--
+1 - Changes in inhibitory control ~ Variations locus coeruleus **integrity**.
+--
+&lt;/br&gt;
+&lt;/br&gt;
+
+2 - Changes in inhibitory control ~ Variation **functional connectivity** ~ Variations locus coeruleus integrity .
+--
+&lt;/br&gt;
+&lt;/br&gt;
+
+3 - Changes in inhibitory control ~ Variations **caudal** locus coeruleus integrity.
+
+---
+
+# Methods
+
+.panelset[
+
+.panel[.panel-name[**Locus Coeruleus integrity**]
+.pull-left[
+* Magnetization-transfer (MT) sensitive magnetic resonance.
+
+* MT contrast (CNR) as proxy of locus coeruleus integrity (Betts et al., 2019).
+
+* Segmentation with probabilistic atlas generated from 7T images (Ye et al., 2020)
+
+  * Unbiased estimation
+  
+  * Superior accuracy compared to automatic/semi-automatic approaches
+  
+  * Especially important for low-res CamCAN MRI MT-w images
+
+]
+
+.pull-right[
+.center[
+&lt;img src="pictures/atlas.png" style = "width: 100%" /&gt;
+
+&lt;/br&gt;
+
+`$$CNR = \frac{v-Mean_{REF}}{SD_{REF}}$$`
+
+]
+]
+] #panel1
+
+.panel[.panel-name[**Sample**]
+.pull-left[
+
+&lt;/br&gt;
+
+
+* CamCAN phase III cohort (CC280).
+
+
+
+
+* Healthy adults aged above 50 years.
+
+  * Locus coeruleus neurons reliably pigmented on adults &gt;50 years (Zecca et al., 2004)
+
+
+
+* N = 64 participants.
+
+  * 86% power assuming a medium-sized effect (f&lt;sup&gt;2 &lt;/sup&gt; = 0.15)
+
+]
+
+.pull-right[
+.center[
+&lt;img src="pictures/demog.png" style = "width: 60%" /&gt;
+]]
+] #panel2
+
+.panel[.panel-name[**Response Inhibition**]
+.pull-left[
+* Stop-Signal task during MRI scan.
+
+* **Response inhibition efficiency**: Stop-signal reaction times (SSRT).
+
+* Adopt consensus recommendations (Verbruggen et al.,2019):
+  * Parametric ex-Gaussian race model (Matzke et al., 2013)
+  
+  * Hierarchical Bayesian estimation
+  
+  * Accounts for attention lapses that could bias SSRT estimation
+
+
+]
+
+.pull-right[.center[
+&lt;img src="pictures/SST.png" style = "width: 70%" /&gt;]
+]
+] #panel3
+
+.panel[.panel-name[**Analyses**]
+
+* Primary analyses use Bayesian statistics to quantify evidence for alternate and null hypothesis.
+* Interpretation Bayes Factors (Jeffrey, 1961):
+  * BF:[1-2]  Anecdotal.
+  * BF:[3-9]  Moderate.
+  * BF:[10-30] Strong.
+  * BF&gt;100 Very strong.
+
+* Frequentist statistics: alpha = 0.05.
+
+* CNR regressed onto age and residuals used as predictor:
+  * Not interested in age-related changes of CNR.
+  
+  * Help preventing collinearity issues.
+
+]
+]
+
+
+
+
+---
+# Results
+.panelset[
+
+.panel[.panel-name[**Hypothesis 1**]
+Changes in SSRT associated with changes in locus-coeruleus **CNR** even after controlling for loss of grey matter in pSMA and rIFG regions: `$$SSRT \sim b_{0} + b_{1}CNR + b_{2}age+ b_{3} CNR*age + b_{4}pSMA + b_{5}rIFG + b_{6}sex$$`
+.pull-left[
+
+&lt;/br&gt;
+
+
+* Strong evidence (BF = 19.07) for association between SSRT and CNR moderated by age (p = 0.0032).
+
+  * Younger (50y) and middle group large CNR associated with fast SSRT.
+  
+  * Older group (&gt;75y) the SSRT~CNR relationship is inverted.
+
+
+]
+
+.pull-right[.center[&lt;img src="pictures/h1.png" style = "width: 65%" /&gt;]]
+] #panel1
+
+.panel[.panel-name[**Hypothesis 2**]
+Changes in SSRT associated with changes functional connectivity (**FC**) between pSMA and rIFG regions  : `$$SSRT \sim b_{0} + b_{1}FC + b_{2}age+ b_{3} FC*age + b_{4}pSMA + b_{5}rIFG + b_{6}sex$$`
+*FC: task-related connectivity (psychophysiological interaction) estimated by Tsvetanov et al (2018).*
+
+.pull-left[
+* Moderate evidence (BF = 4.64) for association between SSRT and task-related connectivity moderated by age (p = 0.0246).
+
+* Relationship mirrors SSRT~CNR results.
+  
+* In elderly participants strong connectivity associated with slow SSRT (Tsvetanov et al., 2018).
+
+
+]
+
+.pull-right[.center[&lt;img src="pictures/h2.png" style = "width: 65%" /&gt;]]
+] #panel2
+
+.panel[.panel-name[**Hypothesis 2-bis**]
+Changes in SSRT associated with changes in CNR **mediated** by functional connectivity between pSMA and rIFG areas.
+
+
+.pull-left[
+* **c1'**: 1 unit increase in CNR ~ .83ms decrease in SSRT (p=0.006)
+
+* **a**: 1 unit increase in CNR ~ .298 unit increase in FC (p=0.003)
+* **b**: increase in FC ~ decrease in SSRT (p&lt;0.001)
+
+* **Index of Moderated Mediation** (z=2.91,p=0.004): 
+  * Effect of CNR on SSRT mediated by FC (indirect effect) 
+  * Indirect effect varies with (i.e. is moderated by)age.
+
+
+]
+
+.pull-right[*Moderated mediation analysis*
+.center[
+
+&lt;/br&gt;
+
+&lt;img src="pictures/med.png" style = "width: 100%" /&gt;]]
+
+
+] #panel3
+
+.panel[.panel-name[**Hypothesis 3**]
+Changes in inhibitory control associated with change in the **caudal**  sub-region of the locus coeruleus:
+`$$\begin{aligned} SSRT \sim b_{0} + b_{1}Caudal + b_{2}Rostral+ b_{3}age + b_{4}pSMA + b_{5}rIFG + b_{6}sex+b_{7}Caudal* Rostral \\ +b_{8}Caudal* age+b_{9}Rostral* age+b_{10}Caudal*Rostral*age \end{aligned}$$`
+.pull-left[
+
+&lt;/br&gt;
+&lt;/br&gt;
+
+
+* Strong evidence (BF = 13.90) for association between SSRT and **rostral** CNR moderated by age (p = 0.0086).
+
+* Caudal CNR x age: BF = 0.855; p = 0.281.
+
+]
+
+.pull-right[.center[&lt;img src="pictures/h3.png" style = "width: 65%" /&gt;]]
+]
+]
+
+
+---
+# Conclusions
+.right-column[
+* We show strong evidence for an association between locus coeruleus and response inhibition.
+
+* Relationship changes with age:in elderly large CNR = slow SSRT.
+* Does CNR intensity represent structural integrity in elderly? (*e.g. neuromelanin could also be toxic to aging neurons; Zecca et al, 2008*)
+
+&lt;/br&gt;
+
+* The effect of locus coeruleus on response inhibition is partly mediated by changes in connectivity between the rIFG and pSMA (Rae et al., 2018).
+
+* The rostral sub-region of the locus coeruleus is strongly linked to inhibitory control, similarly to general cognitive functions (Liu et al., 2020).
+* Rostral-sub region  preferentially targets prefrontal cortex (Loughlin et al., 1986; Mason et al., 1979).
+* Changes in healthy ageing focussed on rostral locus coeruleus (Manaye et al., 1995)
+
+]
+
+.left-column[.center[&lt;img src="pictures/h1.png" style = "width: 90%" /&gt;
+
+&lt;/br&gt;
+
+&lt;img src="pictures/med.png" style = "width: 90%" /&gt;
+]]
+
+---
+class:  center, middle
+
+#Thank you for your attention
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
